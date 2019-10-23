@@ -565,13 +565,13 @@
         }
     ],
     "variables": {
-        "availSetName": "prod-as-us-nc-nfs-01",
+        "availSetName": "[concat('nfs-ha-availset-', parameters('resourcesUniqueString'))]",
         "vmDeploymentNameBase": "nfs-ha-vm-deployment",
         "nodeIpAddrs": [
             "[parameters('node0IPAddr')]",
             "[parameters('node1IPAddr')]"
         ],
-        "nfsHaLbName": "prod-lb-us-nc-nfs-01",
+        "nfsHaLbName": "[concat('nfs-ha-lb-', parameters('resourcesUniqueString'))]",
         "nfsHaLbFeName": "nfs-ha-lb-fe",
         "nfsHaLbFeId": "[resourceId('Microsoft.Network/loadBalancers/frontendIPConfigurations', variables('nfsHaLbName'), variables('nfsHaLbFeName'))]",
         "nfsHaLbBeName": "nfs-ha-lb-be",

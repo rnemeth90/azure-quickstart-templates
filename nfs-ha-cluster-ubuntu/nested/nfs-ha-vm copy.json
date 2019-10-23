@@ -254,7 +254,7 @@
     "variables": {
         "nicName": "[concat('nfs-ha-nic', parameters('vmIndex'), '-', parameters('resourcesUniqueString'))]",
         "ipCfgName": "[concat('nfs-ha-ipcfg', parameters('vmIndex'))]",
-        "vmResourceName": "[concat('azenfsp0', parameters('vmIndex'))]",
+        "vmResourceName": "[concat('nfs-ha-vm', parameters('vmIndex'), '-', parameters('resourcesUniqueString'))]",
         "vmName": "[concat('hanode', parameters('vmIndex'), '-', parameters('resourcesUniqueString'))]",
         "scriptUri": "[concat(parameters('_artifactsLocation'), 'scripts/setup_nfs_ha.sh', parameters('_artifactsLocationSasToken'))]",
         "commonFunctionsScriptUri": "[concat(parameters('_artifactsLocation'), 'scripts/helper_functions.sh', parameters('_artifactsLocationSasToken'))]",
