@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "ghuser"
+      "value": "azureadmin"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "S3curi7y1s1mp0rt@nt!"
     },
     "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "az303rtntest"
     }
   }
 }
